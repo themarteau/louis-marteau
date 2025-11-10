@@ -5,16 +5,18 @@
   <title>Louis Marteau – Art Market Professional</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Résumé of Louis Marteau – Art Market Professional, Auction House Specialist & Independent Art Dealer." />
+
   <style>
+    /* ——— General aesthetic ——— */
     :root {
-      --bg: #f7f7f7;
+      --bg: #faf9f7;
       --card-bg: #ffffff;
-      --accent: #222222;
+      --accent: #1a1a1a;
       --text: #333333;
-      --muted: #666666;
-      --border: #e0e0e0;
-      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-                   "Segoe UI", sans-serif;
+      --muted: #777777;
+      --border: #dcdad7;
+      --font-serif: "Georgia", "Times New Roman", serif;
+      --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     * {
@@ -24,128 +26,120 @@
     }
 
     body {
-      font-family: var(--font-sans);
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
-      padding: 24px;
+      font-family: var(--font-serif);
+      line-height: 1.7;
+      padding: 3rem 1rem;
       display: flex;
       justify-content: center;
     }
 
     .page {
+      max-width: 860px;
       width: 100%;
-      max-width: 900px;
-    }
-
-    .card {
       background: var(--card-bg);
-      border-radius: 18px;
-      padding: 28px 26px 30px;
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
       border: 1px solid var(--border);
-    }
-
-    header {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      margin-bottom: 18px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 14px;
+      padding: 3rem 3.5rem;
     }
 
     h1 {
-      font-size: 1.9rem;
-      font-weight: 600;
+      font-size: 2rem;
+      font-weight: 400;
       letter-spacing: 0.02em;
       color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
     }
 
     .subtitle {
+      font-family: var(--font-sans);
       font-size: 0.95rem;
       color: var(--muted);
+      margin-bottom: 1.5rem;
     }
 
     .contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      font-size: 0.88rem;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
       color: var(--muted);
+      margin-bottom: 0.2rem;
     }
 
-    .contact span {
-      white-space: nowrap;
-    }
-
-    .label {
-      font-weight: 500;
+    .contact a {
       color: var(--accent);
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
     }
 
-    main {
-      display: grid;
-      grid-template-columns: 2.2fr 1.3fr;
-      gap: 24px;
-      margin-top: 10px;
-    }
-
-    section {
-      margin-bottom: 14px;
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.8rem 0;
     }
 
     h2 {
-      font-size: 1rem;
+      font-family: var(--font-sans);
       text-transform: uppercase;
-      letter-spacing: 0.13em;
-      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
       color: var(--accent);
-      margin-bottom: 8px;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.3rem;
     }
 
     .item {
-      margin-bottom: 10px;
+      margin-bottom: 1.6rem;
     }
 
     .role {
-      font-weight: 500;
+      font-weight: 600;
       color: var(--accent);
-      font-size: 0.93rem;
+      font-size: 1rem;
+      letter-spacing: 0.01em;
     }
 
     .org-line {
-      font-size: 0.86rem;
+      font-style: italic;
       color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 0.1rem;
     }
 
     .dates {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       color: var(--muted);
-      font-style: italic;
+      margin-bottom: 0.4rem;
+      font-family: var(--font-sans);
     }
 
     ul {
-      margin-top: 3px;
-      margin-left: 16px;
-      font-size: 0.84rem;
-      color: var(--text);
+      margin-left: 1.2rem;
+      font-size: 0.92rem;
+    }
+    ul li {
+      margin-bottom: 0.3rem;
     }
 
-    ul li {
-      margin-bottom: 3px;
+    p {
+      font-size: 0.9rem;
+      margin-top: 0.4rem;
     }
 
     a {
       color: var(--accent);
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
 
-    .side p, .side li {
-      font-size: 0.82rem;
+    .side {
+      margin-top: 2rem;
     }
 
     .tag-list {
@@ -156,196 +150,192 @@
     }
 
     .tag {
-      padding: 3px 8px;
-      border-radius: 999px;
       border: 1px solid var(--border);
-      font-size: 0.72rem;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
       color: var(--muted);
     }
 
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding-top: 1.2rem;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 2.5rem;
+    }
+
     @media (max-width: 720px) {
-      body {
-        padding: 14px;
-      }
-      .card {
-        padding: 18px 16px 20px;
-      }
-      main {
-        grid-template-columns: 1fr;
+      .page {
+        padding: 2rem 1.4rem;
       }
     }
   </style>
 </head>
 <body>
   <div class="page">
-    <div class="card">
-      <header>
-        <h1>Louis Marteau</h1>
-        <div class="subtitle">Art Market Professional &nbsp;|&nbsp; Auction House Specialist &nbsp;|&nbsp; Independent Art Dealer</div>
-        <div class="contact">
-          <span>📧 <a href="mailto:louis.marteau@icloud.com">louis.marteau@icloud.com</a></span>
-          <span>📞 +33 6 74 86 74 17</span>
-          <span>📍 94 rue La Fayette, 75010 Paris, France</span>
+    <header>
+      <h1>Louis Marteau</h1>
+      <div class="subtitle">Art Market Professional | Auction House Specialist | Independent Art Dealer</div>
+      <div class="contact">📧 <a href="mailto:louis.marteau@icloud.com">louis.marteau@icloud.com</a></div>
+      <div class="contact">📞 +33 6 74 86 74 17</div>
+      <div class="contact">📍 94 rue La Fayette, 75010 Paris, France</div>
+      <div class="contact"><strong>Immigration status:</strong> Green card application in process (married to U.S. citizen); no employer sponsorship required.</div>
+    </header>
+
+    <hr />
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="item">
+        <div class="role">Art Fair Specialist</div>
+        <div class="org-line">Benjamin Proust Fine Art — TEFAF Maastricht</div>
+        <div class="dates">2020, 2022, 2023</div>
+        <ul>
+          <li>Supported client relations and sales of high-value artworks.</li>
+          <li>Collaborated on booth design, artwork presentation, and display strategy.</li>
+          <li>Facilitated communication with international collectors and institutions.</li>
+          <li>Contributed to logistics, transport coordination, and daily fair operations.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="role">Gallery Associate (Independent Consultant)</div>
+        <div class="org-line">Galerie Charles Ratton &amp; Guy Ladrière — Paris</div>
+        <div class="dates">2020 – Present</div>
+        <ul>
+          <li>Specialized in drawings and sculptures from antiquity to the 19th century.</li>
+          <li>Conducted research and authentication for gallery acquisitions.</li>
+          <li>Assisted with client development, sales, and catalog preparation.</li>
+          <li>Supported exhibition planning and art fair presentations.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="role">Founder &amp; Independent Art Dealer</div>
+        <div class="org-line">LM Galerie</div>
+        <div class="dates">May 2015 – 2025</div>
+        <ul>
+          <li>Operated a specialized online gallery focused on European drawings (16th–20th c.).</li>
+          <li>Managed research, authentication, and valuation of artworks.</li>
+          <li>Developed relationships with collectors, institutions, and advisors.</li>
+          <li>Participated in selected events, including FAB Paris 2024 (Grand Palais, Young Exhibitors) and Trois Crayons London 2025.</li>
+        </ul>
+        <p><strong>Press &amp; Media:</strong>
+          <a href="https://www.latribunedelart.com/article12474?lang=en" target="_blank" rel="noopener noreferrer">La Tribune de l’Art</a>,
+          <a href="https://parisdiarybylaure.com/at-fab-great-surprises-and-a-new-generation/" target="_blank" rel="noopener noreferrer">Paris Diary by Laure</a>
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="role">Co-Founder</div>
+        <div class="org-line">
+          <a href="https://www.agarmarteaufineart.com/about-us/" target="_blank" rel="noopener noreferrer">
+            Agar Marteau Fine Art
+          </a>
         </div>
-        <div class="contact">
-          <span><span class="label">Immigration status:</span> Green card application in process (married to U.S. citizen); no employer sponsorship required.</span>
-        </div>
-      </header>
+        <div class="dates">2024 – Present</div>
+        <ul>
+          <li>Co-manage an online gallery dedicated to Old Master and modern drawings.</li>
+          <li>Lead research, authentication, and valuation processes.</li>
+          <li>Build and sustain relationships with collectors, curators, and institutions.</li>
+          <li>Exhibiting at Master Drawings New York 2026 (Van de Weghe Gallery).</li>
+        </ul>
+      </div>
 
-      <main>
-        <!-- LEFT COLUMN: EXPERIENCE -->
-        <div>
-          <section>
-            <h2>Professional Experience</h2>
+      <div class="item">
+        <div class="role">Inventory &amp; Auction Specialist (Part-time)</div>
+        <div class="org-line">Binoche &amp; Giquello Auction House — Paris</div>
+        <div class="dates">April 2015 – Present</div>
+        <ul>
+          <li>Manage inventory, cataloguing, and logistics for fine art auctions.</li>
+          <li>Prepare condition notes and coordinate expert authentication.</li>
+          <li>Liaise with clients during viewings and sales.</li>
+          <li>Support auction set-up, bidding procedures, and post-sale follow-up.</li>
+        </ul>
+      </div>
 
-            <div class="item">
-              <div class="role">Art Fair Specialist</div>
-              <div class="org-line">Benjamin Proust Fine Art — TEFAF Maastricht</div>
-              <div class="dates">2020, 2022, 2023</div>
-              <ul>
-                <li>Supported client relations and sales of high-value artworks.</li>
-                <li>Collaborated on booth design, artwork presentation, and display strategy.</li>
-                <li>Facilitated communication with international collectors and institutions.</li>
-                <li>Contributed to logistics, transport coordination, and daily fair operations.</li>
-              </ul>
-            </div>
+      <div class="item">
+        <div class="role">Inventory Manager</div>
+        <div class="org-line">ADER – Nordmann &amp; Dominique — Paris</div>
+        <div class="dates">September 2017 – February 2019</div>
+        <ul>
+          <li>Supervised storage and movement of artworks.</li>
+          <li>Organized pre-auction exhibitions and viewings.</li>
+          <li>Coordinated with specialists for handling, photography, and condition checks.</li>
+          <li>Maintained accurate inventory records (3 rue Favart location).</li>
+        </ul>
+      </div>
 
-            <div class="item">
-              <div class="role">Gallery Associate</div>
-              <div class="org-line">Galerie Charles Ratton &amp; Guy Ladrière — Paris</div>
-              <div class="dates">2020 – Present</div>
-              <ul>
-                <li>Specialized in drawings and sculptures from antiquity to the 19th century.</li>
-                <li>Conducted research and authentication for gallery acquisitions.</li>
-                <li>Assisted with client development, sales, and catalog preparation.</li>
-                <li>Supported exhibition planning and art fair presentations.</li>
-              </ul>
-            </div>
+      <div class="item">
+        <div class="role">Auction Clerk</div>
+        <div class="org-line">Delorme &amp; Collin du Bocage — Paris</div>
+        <div class="dates">November 2013 – January 2015</div>
+        <ul>
+          <li>Assisted in auction preparation and saleroom operations.</li>
+          <li>Conducted research and contributed to catalog entries.</li>
+          <li>Supported client communication regarding consignments and results.</li>
+        </ul>
+      </div>
 
-            <div class="item">
-              <div class="role">Founder &amp; Independent Art Dealer</div>
-              <div class="org-line">LM Galerie</div>
-              <div class="dates">May 2015 – 2025</div>
-              <ul>
-                <li>Operated a specialized online gallery focused on European drawings (16th–20th c.).</li>
-                <li>Managed research, authentication, and valuation of artworks.</li>
-                <li>Developed relationships with collectors, institutions, and advisors.</li>
-                <li>Participated in selected events, including FAB Paris 2024 (Grand Palais, Young Exhibitors) and Trois Crayons London 2025.</li>
-              </ul>
-              <p style="margin-top:6px; font-size:0.82rem;">
-                <strong>Press &amp; Media:</strong>
-                <a href="https://www.latribunedelart.com/article12474?lang=en" target="_blank" rel="noopener noreferrer">La Tribune de l’Art</a>,
-                <a href="https://parisdiarybylaure.com/at-fab-great-surprises-and-a-new-generation/" target="_blank" rel="noopener noreferrer">Paris Diary by Laure</a>
-              </p>
-            </div>
+      <div class="item">
+        <div class="role">Art Handling Technician</div>
+        <div class="org-line">Art Transit — Paris</div>
+        <div class="dates">2012 – 2013</div>
+        <ul>
+          <li>Handled, packed, and transported fine art for galleries and private collections.</li>
+          <li>Ensured conservation best practices during transit and installation.</li>
+        </ul>
+      </div>
+    </section>
 
-            <div class="item">
-              <div class="role">Co-Founder</div>
-              <div class="org-line">
-                <a href="https://www.agarmarteaufineart.com/about-us/" target="_blank" rel="noopener noreferrer">
-                  Agar Marteau Fine Art
-                </a>
-              </div>
-              <div class="dates">2024 – Present</div>
-              <ul>
-                <li>Co-manage an online gallery dedicated to Old Master and modern drawings.</li>
-                <li>Lead research, authentication, and valuation processes.</li>
-                <li>Build and sustain relationships with collectors, curators, and institutions.</li>
-                <li>Exhibiting at Master Drawings New York 2026 (Van de Weghe Gallery).</li>
-              </ul>
-            </div>
+    <section class="side">
+      <h2>Education</h2>
+      <div class="item">
+        <div class="role">École du Louvre — Evening Courses</div>
+        <div class="dates">2013 – 2014</div>
+        <ul>
+          <li>Art history and art market specialization.</li>
+        </ul>
+      </div>
+    </section>
 
-            <div class="item">
-              <div class="role">Inventory &amp; Auction Specialist</div>
-              <div class="org-line">Binoche &amp; Giquello Auction House — Paris</div>
-              <div class="dates">April 2015 – Present</div>
-              <ul>
-                <li>Manage inventory, cataloguing, and logistics for fine art auctions.</li>
-                <li>Prepare condition notes and coordinate expert authentication.</li>
-                <li>Liaise with clients during viewings and sales.</li>
-                <li>Support auction set-up, bidding procedures, and post-sale follow-up.</li>
-              </ul>
-            </div>
+    <section class="side">
+      <h2>Languages</h2>
+      <ul>
+        <li><strong>French:</strong> Native</li>
+        <li><strong>English:</strong> Fluent</li>
+      </ul>
+    </section>
 
-            <div class="item">
-              <div class="role">Inventory Manager</div>
-              <div class="org-line">ADER – Nordmann &amp; Dominique — Paris</div>
-              <div class="dates">September 2017 – February 2019</div>
-              <ul>
-                <li>Supervised storage and movement of artworks.</li>
-                <li>Organized pre-auction exhibitions and viewings.</li>
-                <li>Coordinated with specialists for handling, photography, and condition checks.</li>
-                <li>Maintained accurate inventory records (3 rue Favart location).</li>
-              </ul>
-            </div>
+    <section class="side">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Artwork cataloguing &amp; condition reporting</li>
+        <li>Inventory &amp; collection management</li>
+        <li>Microsoft Office, Google Workspace, Adobe Acrobat</li>
+      </ul>
+    </section>
 
-            <div class="item">
-              <div class="role">Auction Clerk</div>
-              <div class="org-line">Delorme &amp; Collin du Bocage — Paris</div>
-              <div class="dates">November 2013 – January 2015</div>
-              <ul>
-                <li>Assisted in auction preparation and saleroom operations.</li>
-                <li>Conducted research and contributed to catalog entries.</li>
-                <li>Supported client communication regarding consignments and results.</li>
-              </ul>
-            </div>
+    <section class="side">
+      <h2>Key Expertise</h2>
+      <div class="tag-list">
+        <span class="tag">Old Master drawings</span>
+        <span class="tag">19th–20th c. works</span>
+        <span class="tag">Art fair liaison</span>
+        <span class="tag">Auction operations</span>
+        <span class="tag">Client development</span>
+        <span class="tag">Research &amp; authentication</span>
+      </div>
+    </section>
 
-            <div class="item">
-              <div class="role">Art Handling Technician</div>
-              <div class="org-line">Art Transit — Paris</div>
-              <div class="dates">2012 – 2013</div>
-              <ul>
-                <li>Handled, packed, and transported fine art for galleries and private collections.</li>
-                <li>Ensured conservation best practices during transit and installation.</li>
-              </ul>
-            </div>
-          </section>
-        </div>
-
-        <!-- RIGHT COLUMN: EDUCATION / SKILLS / ETC. -->
-        <div class="side">
-          <section>
-            <h2>Education</h2>
-            <div class="item">
-              <div class="role">École du Louvre — Evening Courses</div>
-              <div class="dates">2013 – 2014</div>
-              <ul>
-                <li>Art history and art market specialization.</li>
-              </ul>
-            </div>
-          </section>
-
-          <section>
-            <h2>Languages</h2>
-            <ul>
-              <li><strong>French:</strong> Native</li>
-              <li><strong>English:</strong> Fluent</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Technical Skills</h2>
-            <ul>
-              <li>Artwork cataloguing &amp; condition reporting</li>
-              <li>Inventory &amp; collection management</li>
-              <li>Microsoft Office, Google Workspace, Adobe Acrobat</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Key Expertise</h2>
-            <div class="tag-list">
-              <span class="tag">Old Master drawings</span>
-              <span class="tag">19th–20th c. works</span>
-              <span class="tag">Art fair liaison</span>
-              <span class="tag">Auction operations</span>
-              <span class="tag">Client development</span>
-              <span class="tag">Research &amp; authentication</span>
-            </div>
-          </section>
-        </div>
-      </main>
-    </div>
+    <footer>
+      © Louis Marteau — Updated 2025
+    </footer>
   </div>
 </body>
 </html>
