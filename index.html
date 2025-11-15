@@ -7,7 +7,6 @@
   <meta name="description" content="Résumé of Louis Marteau – Art Market Professional, Auction House Specialist & Independent Art Dealer." />
 
   <style>
-    /* ——— General aesthetic ——— */
     :root {
       --bg: #faf9f7;
       --card-bg: #ffffff;
@@ -44,7 +43,6 @@
     }
 
     header {
-      position: relative;
       margin-bottom: 0.5rem;
     }
 
@@ -55,7 +53,6 @@
       color: var(--accent);
       text-transform: uppercase;
       margin-bottom: 0.4rem;
-      padding-right: 140px; /* room for portrait */
     }
 
     .subtitle {
@@ -63,7 +60,6 @@
       font-size: 0.95rem;
       color: var(--muted);
       margin-bottom: 1.2rem;
-      padding-right: 140px; /* room for portrait */
     }
 
     .subtitle em {
@@ -80,7 +76,6 @@
       font-size: 0.9rem;
       color: var(--muted);
       margin-bottom: 0.2rem;
-      padding-right: 140px; /* room for portrait */
     }
 
     .contact-email a {
@@ -97,19 +92,6 @@
       font-weight: 600;
       color: var(--accent);
       margin-bottom: 0.1rem;
-    }
-
-    .portrait {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 150px;
-      height: auto;
-      border-radius: 4px;
-      border: 1px solid var(--border);
-      object-fit: cover;
-      background-color: #ffffff;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
 
     hr {
@@ -168,7 +150,6 @@
       margin-top: 0.4rem;
     }
 
-    /* Global link style (including email & press links) */
     a {
       color: #1a1a1a;
       text-decoration: underline;
@@ -225,23 +206,12 @@
       main {
         grid-template-columns: 1fr;
       }
-      h1,
-      .subtitle,
-      .contact {
-        padding-right: 0;
-      }
-      .portrait {
-        position: static;
-        display: block;
-        margin: 0 0 1.2rem auto;
-      }
     }
   </style>
 </head>
 <body>
   <div class="page">
     <header>
-      <img src="portrait.png" alt="Portrait of Louis Marteau" class="portrait" />
       <h1>Louis Marteau</h1>
       <div class="subtitle">Art Market Professional | Auction House Specialist | Independent Art Dealer<br><em>10+ years of experience in the art market</em></div>
       <div class="contact contact-email">📧 <a href="mailto:louis.marteau@icloud.com">louis.marteau@icloud.com</a></div>
@@ -261,6 +231,79 @@
       <div>
         <section>
           <h2>Professional Experience</h2>
+
+          <div class="item">
+            <div class="role">Art Handling Technician</div>
+            <div class="org-line">Art Transit — Paris</div>
+            <div class="dates">2012 – 2013</div>
+            <ul>
+              <li>Handled, packed, and transported fine art for galleries and private collections.</li>
+              <li>Ensured conservation best practices during transit and installation.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="role">Auction Clerk</div>
+            <div class="org-line">Delorme &amp; Collin du Bocage — Paris</div>
+            <div class="dates">November 2013 – January 2015</div>
+            <ul>
+              <li>Assisted in auction preparation and saleroom operations.</li>
+              <li>Conducted research and contributed to catalog entries.</li>
+              <li>Supported client communication regarding consignments and results.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="role">Inventory &amp; Auction Specialist</div>
+            <div class="org-line">Binoche &amp; Giquello Auction House — Paris</div>
+            <div class="dates">April 2015 – Present</div>
+            <ul>
+              <li>Manage inventory, cataloguing, and logistics for fine art auctions.</li>
+              <li>Prepare condition notes and coordinate expert authentication.</li>
+              <li>Liaise with clients during viewings and sales.</li>
+              <li>Support auction set-up, bidding procedures, and post-sale follow-up.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="role">Founder &amp; Independent Art Dealer</div>
+            <div class="org-line">LM Galerie</div>
+            <div class="dates">May 2015 – 2025</div>
+            <ul>
+              <li>Operated a specialized online gallery focused on European drawings (16th–20th c.).</li>
+              <li>Managed research, authentication, and valuation of artworks.</li>
+              <li>Developed relationships with collectors, institutions, and advisors.</li>
+              <li>
+                Participated in selected events, including
+                <a href="https://finearts-paris.com/en/2024/11/11/6-young-talents/" target="_blank" rel="noopener noreferrer">Fine Arts Paris &amp; La Biennale 2024</a>,
+                FAB Paris 2024 (Grand Palais, Young Exhibitors), and Trois Crayons London 2025.
+              </li>
+            </ul>
+            <p><strong>Press &amp; Media:</strong>
+              <a href="https://www.latribunedelart.com/article12474?lang=en" target="_blank" rel="noopener noreferrer">La Tribune de l’Art</a>,
+              <a href="https://parisdiarybylaure.com/at-fab-great-surprises-and-a-new-generation/" target="_blank" rel="noopener noreferrer">Paris Diary by Laure</a>,
+              <a href="https://www.gazette-drouot.com/article/six-jeunes-talents-a-l-honneur-au-salon-fab-paris/53485" target="_blank" rel="noopener noreferrer">La Gazette de Drouot</a>
+            </p>
+            <p>
+              <strong>Exhibition Catalogues:</strong><br>
+              LM Galerie Exhibition 2024 — 
+              <a href="https://drive.google.com/file/d/1X93ejMP0dEJzdvaNu8um-KljMKGNX0qs/view?usp=sharing" target="_blank" rel="noopener noreferrer">View PDF</a><br>
+              LM Galerie Exhibition 2025 — 
+              <a href="https://drive.google.com/file/d/1X93ejMP0dEJzdvaNu8um-KljMKGNX0qs/view?usp=sharing" target="_blank" rel="noopener noreferrer">View PDF</a>
+            </p>
+          </div>
+
+          <div class="item">
+            <div class="role">Inventory Manager</div>
+            <div class="org-line">ADER – Nordmann &amp; Dominique — Paris</div>
+            <div class="dates">September 2017 – February 2019</div>
+            <ul>
+              <li>Supervised storage and movement of artworks.</li>
+              <li>Organized pre-auction exhibitions and viewings.</li>
+              <li>Coordinated with specialists for handling, photography, and condition checks.</li>
+              <li>Maintained accurate inventory records (3 rue Favart location).</li>
+            </ul>
+          </div>
 
           <div class="item">
             <div class="role">Art Fair Specialist</div>
@@ -287,23 +330,6 @@
           </div>
 
           <div class="item">
-            <div class="role">Founder &amp; Independent Art Dealer</div>
-            <div class="org-line">LM Galerie</div>
-            <div class="dates">May 2015 – 2025</div>
-            <ul>
-              <li>Operated a specialized online gallery focused on European drawings (16th–20th c.).</li>
-              <li>Managed research, authentication, and valuation of artworks.</li>
-              <li>Developed relationships with collectors, institutions, and advisors.</li>
-              <li>Participated in selected events, including FAB Paris 2024 (Grand Palais, Young Exhibitors) and Trois Crayons London 2025.</li>
-            </ul>
-            <p><strong>Press &amp; Media:</strong>
-              <a href="https://www.latribunedelart.com/article12474?lang=en" target="_blank" rel="noopener noreferrer">La Tribune de l’Art</a>,
-              <a href="https://parisdiarybylaure.com/at-fab-great-surprises-and-a-new-generation/" target="_blank" rel="noopener noreferrer">Paris Diary by Laure</a>,
-              <a href="https://www.gazette-drouot.com/article/six-jeunes-talents-a-l-honneur-au-salon-fab-paris/53485" target="_blank" rel="noopener noreferrer">La Gazette de Drouot</a>
-            </p>
-          </div>
-
-          <div class="item">
             <div class="role">Co-Founder</div>
             <div class="org-line">
               <a href="https://www.agarmarteaufineart.com/about-us/" target="_blank" rel="noopener noreferrer">
@@ -319,50 +345,6 @@
             </ul>
           </div>
 
-          <div class="item">
-            <div class="role">Inventory &amp; Auction Specialist</div>
-            <div class="org-line">Binoche &amp; Giquello Auction House — Paris</div>
-            <div class="dates">April 2015 – Present</div>
-            <ul>
-              <li>Manage inventory, cataloguing, and logistics for fine art auctions.</li>
-              <li>Prepare condition notes and coordinate expert authentication.</li>
-              <li>Liaise with clients during viewings and sales.</li>
-              <li>Support auction set-up, bidding procedures, and post-sale follow-up.</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div class="role">Inventory Manager</div>
-            <div class="org-line">ADER – Nordmann &amp; Dominique — Paris</div>
-            <div class="dates">September 2017 – February 2019</div>
-            <ul>
-              <li>Supervised storage and movement of artworks.</li>
-              <li>Organized pre-auction exhibitions and viewings.</li>
-              <li>Coordinated with specialists for handling, photography, and condition checks.</li>
-              <li>Maintained accurate inventory records (3 rue Favart location).</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div class="role">Auction Clerk</div>
-            <div class="org-line">Delorme &amp; Collin du Bocage — Paris</div>
-            <div class="dates">November 2013 – January 2015</div>
-            <ul>
-              <li>Assisted in auction preparation and saleroom operations.</li>
-              <li>Conducted research and contributed to catalog entries.</li>
-              <li>Supported client communication regarding consignments and results.</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div class="role">Art Handling Technician</div>
-            <div class="org-line">Art Transit — Paris</div>
-            <div class="dates">2012 – 2013</div>
-            <ul>
-              <li>Handled, packed, and transported fine art for galleries and private collections.</li>
-              <li>Ensured conservation best practices during transit and installation.</li>
-            </ul>
-          </div>
         </section>
       </div>
 
